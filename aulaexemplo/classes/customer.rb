@@ -33,6 +33,13 @@ class Customer
         puts "Endereço completo#{full_address}"
         puts '---'
 
+        show_invoice
+    end
+
+    def show_invoice
+        
+        puts 'Nenhuma compra realizada' if invoices.empty?
+
         @invoices.each do |invoice|
             puts 'Compras: '
             puts "código: #{invoice[:invoice]} "

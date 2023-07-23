@@ -61,8 +61,8 @@ card = {
 
 }
 
-cart = Cart.new(customer:, payment_method: 'bank_slip')
-# cart = Cart.new(customer:, payment_method: 'Credit_card', card:)
+# cart = Cart.new(customer:, payment_method: 'bank_slip')
+cart = Cart.new(customer:, payment_method: 'Credit_card', card:)
 
 cart.add(book)
 cart.checkout
